@@ -1,8 +1,12 @@
-# React + Vite
+# React Child-to-Parent Communication
+In React, child-to-parent communication happens when a child component needs to send data or trigger a function in the parent component. This can be achieved by **passing a function from the parent to the child** as a prop, which the child can then call with the data it needs to send back to the parent.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> [!IMPORTANT]
+> How Child-to-Parent Communication Works.
 
-Currently, two official plugins are available:
+1.**Parent Component**defines a function.
+2.**Parent passes the function as a prop**o the child component.
+3.**Child Component**calls this function when an event happens, passing the data back to the parent.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+> [!TIP]
+> You can enhance this example by using **Context API** if you need a more complex or deeply nested structure.
